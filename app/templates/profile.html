@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+<!--{% block css %}
+<link rel='stylesheet' href = {{url_for('static', filename='')}}>
+{% endblock %}-->
+
+{% block main %}
+<div class="profile_info" name="fakeinfo">
+<img class="profile_img" src={{url_for('static', filename='kamkam.jpg')}}> 
+<h1> Giselle Todd </h1>
+<h4> @gtodd </h4>
+<h4> Kingston, Jamaica </h4>
+<h4> Joined {{date}} </h4>
+</div>
+
+<div class="description" name="description">
+<p> <b>#WomenWhoCode</b>, I aspire to challenge the stereotypes about women in computing.
+I wish to hone the appropriate skills needed for me to become a Full Stack Developer and 
+Network Administrator on the side. Technology has grown on me and revealed it's many purposes.
+</p>
+
+
+<table class="center" cellspacing=12>
+<tr>
+    <th>7</th>&nbsp;
+    <th>100</th>
+    <th>250</th>
+</tr>
+<tr>
+    <td>Posts</td>
+    <td>Following</td>
+    <td>Followers</td>
+</tr>
+</table>
+
+<button class="button" type="button" name="followbtn"> Follow </button>
+</div>
+{% endblock %}
